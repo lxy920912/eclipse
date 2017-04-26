@@ -1,0 +1,27 @@
+package leetcode;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+//        LeetCode165 leetCode165 = new LeetCode165();
+//        System.out.println(leetCode165.compareVersion("1","1.0.1"));
+//        LeetCode150 leetCode150 = new LeetCode150();
+//        String[] tokens= {"4", "13", "5", "/", "+"};
+//        System.out.println(leetCode150.evalRPN(tokens));
+//        int [] nums = {2,4,5,6,6,5,4};
+//        LeetCode136 leetCode136 = new LeetCode136();
+//        System.out.println(leetCode136.singleNumber(nums));
+//        int []nums = {2,3,4,5,4,5};
+//        LeetCode260 leetCode260 = new LeetCode260();
+//        System.out.println(leetCode260.singleNumber(nums));
+//
+        int [] inorder ={3,2,4,1,5,6};
+        int [] postorder = {3,4,2,6,5,1};
+        TreeNode root = TreeNode.buildTree(inorder,postorder);
+        root.travel(root);
+        LeetCode114 leetCode114 = new LeetCode114();
+        leetCode114.flatten(root);
+
+    }
+}

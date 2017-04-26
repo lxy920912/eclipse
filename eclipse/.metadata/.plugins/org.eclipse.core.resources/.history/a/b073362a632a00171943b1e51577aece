@@ -1,0 +1,8 @@
+package leetcode;
+
+public class LeetCode3 {
+	public int lengthOfLongestSubstring(String s) {
+		int[] arr = new int[255];
+        return 0;
+    }
+}
